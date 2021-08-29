@@ -3,7 +3,102 @@
 <head>
     <meta charset="utf-8" />
     <title> using the grid system</title>
-    <link rel="stylesheet" type="text/css" href="grid_layout_samplewebpage.css"/></head>
+    <link rel="stylesheet" type="text/css" href="grid_layout_samplewebpage.css"/>
+    <style>
+    p{
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'side content content ads'
+    'footer footer footer footer';
+}
+
+.main-nav {
+    grid-area: nav;
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+    columns: white;
+}
+
+.main-nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.main-nav a:hover{
+    background: #ccc;
+}
+.main-head{
+    grid-area: header;
+    background: blue;
+    padding: 40px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.content{
+    grid-area: content;
+}
+.ads{
+    grid-area: ads;
+    background: palegreen;
+    min-height: 200px;
+    text-align: center;
+}
+.side{
+    grid-area: side;
+    background: rgb(178, 241, 30);
+    min-height: 200px;
+    text-align: center;
+}
+
+.main-footer{
+    grid-area: footer;
+    background: crimson;
+    padding: 40px;
+    font-size: 3em;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .main-nav ul{
+     flex-direction:column;
+    }
+    .wrapper{
+        grid-template-columns:auto;
+        grid-template-areas: 
+       'header' 
+       'nav' 
+       'content' 
+       'side' 
+       'ads' 
+       'footer';
+}
+
+}
+    }
+    </sytle>
+    
+    </head>
 
 <body>
     <div class="wrapper">
