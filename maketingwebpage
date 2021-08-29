@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> using the grid system</title>
+    <link rel="stylesheet" type="text/css" href="grid_layout_samplewebpage.css"/></head>
+
+<body>
+    <div class="wrapper">
+    <header class="main-head">Header Company Logo</header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    <article class="content">
+    <h1>Main area</h1>
+    <p>	
+    To see the responsive design for tablet and mobile phone screen sizes,right-click.
+    Drag the || bar to make the viewport narrower and look at the width value appearing .
+    When the width value < 768px (for example, 767px, tablet size), there are 2 sections .
+    When the value < 576px (for example, 567px, phone size), there is one section per row.
+    To see the responsive design for tablet and mobile phone screen sizes, right-click.
+    Drag the || bar to make the viewport narrower and look at the width value appearing . 
+    When the width value < 768px (for example, 767px, tablet size), there are 2 sections. 
+    When the value < 576px (for example, 567px, phone size), there is one section per row.</p>
+    </article>
+    <div class="ads">Advertising Here</div>
+    <aside class="side">Sidebar</aside>
+    <footer class="main-footer">The footer (C) My Company 2025</footer>
+  </div>  
+   
+</body>
+
+</html
